@@ -17,6 +17,7 @@
 		A27BB9BE24C8095E001F0D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A27BB9BD24C8095E001F0D8C /* Assets.xcassets */; };
 		A27BB9C124C8095E001F0D8C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A27BB9BF24C8095E001F0D8C /* LaunchScreen.storyboard */; };
 		A27BB9CC24C8095E001F0D8C /* SwiftyLibExamplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BB9CB24C8095E001F0D8C /* SwiftyLibExamplesTests.swift */; };
+		A27BB9D524C80D54001F0D8C /* SwiftLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = A27BB9D424C80D54001F0D8C /* SwiftLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		A27BB9C724C8095E001F0D8C /* SwiftyLibExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyLibExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27BB9CB24C8095E001F0D8C /* SwiftyLibExamplesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLibExamplesTests.swift; sourceTree = "<group>"; };
 		A27BB9CD24C8095E001F0D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A27BB9D424C80D54001F0D8C /* SwiftLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 			children = (
 				A27BB99724C80882001F0D8C /* SwiftyLib.h */,
 				A27BB99824C80882001F0D8C /* Info.plist */,
+				A27BB9D424C80D54001F0D8C /* SwiftLib.swift */,
 			);
 			path = SwiftyLib;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				TargetAttributes = {
 					A27BB99324C80882001F0D8C = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1120;
 					};
 					A27BB99C24C80882001F0D8C = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -322,6 +326,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A27BB9D524C80D54001F0D8C /* SwiftLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,6 +514,7 @@
 		A27BB9A924C80882001F0D8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -524,6 +530,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.conduent.SwiftyLib;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -532,6 +539,7 @@
 		A27BB9AA24C80882001F0D8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -555,6 +563,7 @@
 		A27BB9AC24C80882001F0D8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -572,6 +581,7 @@
 		A27BB9AD24C80882001F0D8C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SwiftyLibTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
